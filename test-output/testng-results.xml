@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-21T18:35:15 PDT" name="Default suite" finished-at="2025-06-21T18:35:19 PDT" duration-ms="3882">
+    <groups>
+    </groups>
+    <test started-at="2025-06-21T18:35:15 PDT" name="Default test" finished-at="2025-06-21T18:35:19 PDT" duration-ms="3882">
+      <class name="com.tekarch.dbtesting.SchemaValidationTest">
+        <test-method signature="schemaTest()[pri:0, instance:com.tekarch.dbtesting.SchemaValidationTest@62379589]" started-at="2025-06-21T18:35:15 PDT" name="schemaTest" finished-at="2025-06-21T18:35:19 PDT" duration-ms="3839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaTest -->
+      </class> <!-- com.tekarch.dbtesting.SchemaValidationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
