@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tekarch.dbtesting.SchemaValidationTest">
+      <class name="com.tekarch.dbtesting.DBAPIAssignment">
         <methods>
-          <include name="schemaTest"/>
+          <include name="setUp"/>
+          <include name="uiApiDbTest"/>
+          <include name="tearDown"/>
+          <include name="checkDBForAddedProject"/>
+          <include name="checkAPI"/>
         </methods>
-      </class> <!-- com.tekarch.dbtesting.SchemaValidationTest -->
+      </class> <!-- com.tekarch.dbtesting.DBAPIAssignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

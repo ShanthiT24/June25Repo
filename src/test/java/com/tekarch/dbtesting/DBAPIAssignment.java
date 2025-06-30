@@ -187,7 +187,8 @@ public class DBAPIAssignment {
 							 
 						 res.then()
 							 	.statusCode(200)
-							 	.body("project_name", notNullValue());
+							 	//.body("project_name", notNullValue());
+							 	.body("projectName", notNullValue());
 		
 		System.out.println("Status Code :"+res.getStatusCode());
 		System.out.println("Response Body:");

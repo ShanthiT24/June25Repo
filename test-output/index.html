@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.tekarch.dbtesting.SchemaValidationTest" class="method navigator-link" hash-for-method="schemaTest">schemaTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.tekarch.dbtesting.DBAPIAssignment" class="method navigator-link" hash-for-method="checkAPI">checkAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tekarch.dbtesting.DBAPIAssignment" class="method navigator-link" hash-for-method="checkDBForAddedProject">checkDBForAddedProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.tekarch.dbtesting.DBAPIAssignment" class="method navigator-link" hash-for-method="uiApiDbTest">uiApiDbTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +131,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.tekarch.dbtesting.SchemaValidationTest</span>
+              <span class="class-name">com.tekarch.dbtesting.DBAPIAssignment</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="schemaTest">
-                  </a> <!-- schemaTest -->
-                  <span class="method-name">schemaTest</span>
+                  <a name="checkAPI">
+                  </a> <!-- checkAPI -->
+                  <span class="method-name">checkAPI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkDBForAddedProject">
+                  </a> <!-- checkDBForAddedProject -->
+                  <span class="method-name">checkDBForAddedProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uiApiDbTest">
+                  </a> <!-- uiApiDbTest -->
+                  <span class="method-name">uiApiDbTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/4k/hl9ghqfd2kgblc0m474_2p480000gn/T/testng-eclipse--853401441/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/4k/hl9ghqfd2kgblc0m474_2p480000gn/T/testng-eclipse-1665497018/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +169,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tekarch.dbtesting.SchemaValidationTest&quot;/&gt;
+      &lt;class name=&quot;com.tekarch.dbtesting.DBAPIAssignment&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'schemaTest')
-data.setCell(0, 2, 'com.tekarch.dbtesting.SchemaValidationTest')
-data.setCell(0, 3, 3839);
+data.setCell(0, 1, 'uiApiDbTest')
+data.setCell(0, 2, 'com.tekarch.dbtesting.DBAPIAssignment')
+data.setCell(0, 3, 17486);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkDBForAddedProject')
+data.setCell(1, 2, 'com.tekarch.dbtesting.DBAPIAssignment')
+data.setCell(1, 3, 3108);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkAPI')
+data.setCell(2, 2, 'com.tekarch.dbtesting.DBAPIAssignment')
+data.setCell(2, 3, 2563);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,11 +252,43 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tekarch.dbtesting.SchemaValidationTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">schemaTest</span>
+              <div class="chronological-class-name">com.tekarch.dbtesting.DBAPIAssignment</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uiApiDbTest</span>
+                <span class="method-start">5859 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23352 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23448 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkDBForAddedProject</span>
+                <span class="method-start">27810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkAPI</span>
+                <span class="method-start">35334 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37914 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
